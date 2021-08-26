@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.ball {
+  width: 12px;
+  height: 12px;
+	left:25%;
+	top:45%;
+
+  background: url("../pic/soccerball.png");
+	background-size: cover;
+	animation-name: example;
+
+	position: relative;
+
+/*	-webkit-animation: example 4s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+*/          animation: example 6s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+		animation-delay: 3s;
+
+}
+
+	
+.succerfield-attack-left {
+	animation-name: example1;
+	
+	opacity: 0;
+animation: example1 10s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+	
+}	
+
+.goal {
+	position: absolute; top: 380px; z-index: 1; width: 200px; left: 29%;
+	animation-name: goal1;
+	
+	opacity: 0;
+animation: goal1 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+
+}
+
+
+
+@keyframes example {
+  0%   {left:25%; top:45%; transform: rotate(0);opacity: 0}
+  2%   {left:25%; top:45%; transform: rotate(0);opacity: 1}
+  30%  {left:70%; top:25%; transform: rotate(4000deg); }
+  55%  {left:60%; top:50%; transform: rotate(-2800deg);}
+  75%  {left:75%; top:75%; transform: rotate(1000deg);}
+  90%  {left:87%; top:45%; transform: rotate(1000deg);}
+  99%  {left:87%; top:45%; transform: rotate(1000);opacity: 1}
+  100% {left:87%; top:45%; transform: rotate(1000);opacity: 0 }
+}
+@keyframes example1 {
+  0%   { opacity: 0;}
+  25%  {opacity: 1 }
+   75%   { opacity: 1;}
+  100%  {opacity: 0 }
+}	
+	
+@keyframes goal1 {
+  0%   { opacity: 0;}
+  15%  {opacity: 1 }
+   30%   { opacity: 0;}
+  45%  {opacity: 1 }
+	   60%   { opacity: 0;}
+  75%  {opacity: 1;transform: scale(100%); }
+	100%  {opacity: 0 ; transform: scale(300%); }
+}		
+
+
+
+
+
+
+
+@media only screen and (max-width:1500px) {
+	
+	.goal {
+	top: 320px; z-index: 1; width: 200px; left: 28%;
+	}
+}
+
+
+@media only screen and (max-width:1300px) {
+	
+	.goal {
+	top: 250px; z-index: 1; width: 200px; left: 27%;
+	}
+}
+
+
+
+@media only screen and (max-width:1150px) {
+	
+	.goal {
+	top: 220px; z-index: 1; width: 200px; left: 24%;
+	}
+}
+
+
+
+@media only screen and (max-width:1000px) {
+	
+	.goal {
+	top: 150px; z-index: 1; width: 150px; left: 23%;
+	}
+}
+
+
+@media only screen and (max-width:900px) {
+	
+	.goal {
+	top: 200px; 
+	
+
+}
+}
+
+
+@media only screen and (max-width:800px) {
+	
+	.goal {
+	top: 170px; 
+	
+
+}
+}
+
+@media only screen and (max-width:600px) {
+	
+	.goal {
+	top: 220px; left: 36%;
+	
+
+}
+}
+
+@media only screen and (max-width:500px) {
+	
+	.goal {
+	top: 190px; left: 34%;
+	
+
+}
+}
+	
